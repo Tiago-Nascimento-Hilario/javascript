@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Painel para upload de fotos com nome e descrição">
+  <meta name="keywords" content="upload de fotos, nome da foto, descrição, painel, gerenciamento de arquivos">
+  <title>Painel de Upload de Fotos</title>
+
+  <link rel="stylesheet" href="/02-projeto/style.css">
+  
+  <!-- Tags de SEO -->
+  <meta property="og:title" content="Painel de Upload de Fotos">
+  <meta property="og:description" content="Envie fotos com nome e descrição e gerencie seus arquivos de maneira fácil.">
+  <meta property="og:type" content="website">
+
+</head>
+<body>
+
+  <main>
+    <h1>Painel de Upload de Fotos</h1>
+    <form id="uploadForm">
+      <label for="foto">Selecione a foto:</label>
+      <input type="file" id="foto" name="foto" accept="image/*" required>
+
+      <label for="nome">Nome da Foto:</label>
+      <input type="text" id="nome" name="nome" placeholder="Insira o nome da foto" required>
+
+      <label for="descricao">Descrição da Foto:</label>
+      <textarea id="descricao" name="descricao" rows="4" placeholder="Insira a descrição da foto" required></textarea>
+
+      <button type="submit">Enviar Foto</button>
+      <button type="button" id="delete">Excluir Foto</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 - Painel de Upload de Fotos</p>
+  </footer>
+
+ <script type="module" src="/02-projeto/script.js"></script>
+
+</body>
+</html>
