@@ -16,6 +16,17 @@ body {
     font-size: 24px;
     margin-bottom: 10px;
   }
+
+  .container-fotos{
+    border-radius: 6px;
+    max-width: 600px;
+    padding: 6px;    
+  }
+
+  img{
+    width: 150px;
+  }
+
   form {
     display: flex;
     flex-direction: column;
