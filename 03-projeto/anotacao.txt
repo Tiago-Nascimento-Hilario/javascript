@@ -1,0 +1,22 @@
+Tipos de Dados, Variáveis e Operadores
+
+Tipos de Dados Primitivos:
+
+String: "Hello"
+Number: 42
+Boolean: true ou false
+Null: null
+Undefined: undefined
+Symbol (ES6): Symbol('description')
+Declaração de Variáveis:
+
+var: tem escopo de função e sofre hoisting.
+let: tem escopo de bloco e não sofre hoisting.
+const: usado para valores constantes, também com escopo de bloco.
+
+Operadores:
+
+Aritméticos: +, -, *, /, %
+Comparação: ==, ===, !=, !==, >, <, >=, <=
+Lógicos: &&, ||, !
+Atribuição: =, +=, -=, *=, /=
