@@ -41,10 +41,14 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Unbounded', cursive;
 }
 
+
 .app__logo-figure {
     display: flex;
     justify-content: center;
     padding: 4rem 0;
+}
+.app__image{
+    width: 200px;
 }
 
 .app__section-banner-container {
@@ -59,7 +63,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .app__title {
     line-height: 150%;
-    font-size: 5.2rem;
+    font-size: 4.0rem;
     font-style: normal;
     color: var(--color-secondary);
     font-weight: 200;
@@ -81,8 +85,9 @@ h1, h2, h3, h4, h5, h6 {
     background: var(--fundo-card-timer);
     padding: 2.4rem;
     margin: 8rem 0;
-    width: 59rem;
-    max-width: 90%;
+    width: 89rem;
+    height: 34rem;
+    max-width: 80%;
 }
 
 .app__card-list {
@@ -119,7 +124,7 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--color-secondary);
     text-align: center;
     font-family: Unbounded;
-    font-size: 12rem;
+    font-size: 6rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -139,6 +144,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 1rem
 }
 
 .app__card-primary-button {
