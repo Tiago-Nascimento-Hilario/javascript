@@ -26,5 +26,9 @@ document.addEventListener("DOMContentLoaded", ()=>{
     const formularioPensamento = document.querySelector("#pensamento-form");
     formularioPensamento.addEventListener("submit", controlarEnvioFormulario)
 
+    const btnCancelar = document.querySelector("#botao-cancelar");
+
+    btnCancelar.addEventListener("click", ui.limpaFormulario)
+
 })
 

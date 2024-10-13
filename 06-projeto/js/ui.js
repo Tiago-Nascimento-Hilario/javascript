@@ -2,13 +2,17 @@ import api from "./api.js";
 
 const ui = {
     async rederizarPensamentos() {
-        const listaPensamentos = document.querySelector("#lista-pensamentos");
         try {
             const pensamentos = await api.buscarPensamentos();
             pensamentos.forEach(ui.adicionaPensamentoNaLista);
         } catch (error) {
             alert("Error ao renderizar pensamentos");
         }
+    },
+
+
+    limpaFormulario(){
+        document.querySelector("#pensamento-form").reset();
     },
 
     adicionaPensamentoNaLista(pensamento){
@@ -38,7 +42,7 @@ const ui = {
 
         listaPensamentos.appendChild(li);
 
-    }
+    },
 }
 
 export default ui;
