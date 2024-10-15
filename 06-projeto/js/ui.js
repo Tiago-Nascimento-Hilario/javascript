@@ -2,7 +2,16 @@ import api from "./api.js";
 
 const ui = {
 
+
+    async preencherFormulario(pensamentoId){
+        const pensamento = await api.buscarPensamentoId(pensamentoId);
+        document.querySelector("#pensamento-id").value = pensamento.id;     
+        document.querySelector("#pensamento-conteudo").value = pensamento.conteudo;
+        document.querySelector("#pensamento-autoria").value = pensamento.autoria;  
+  },
+
     async rederizarPensamentos() {
+        
         try {
             const pensamentos = await api.buscarPensamentos();
             pensamentos.forEach(ui.adicionaPensamentoNaLista);
@@ -11,12 +20,6 @@ const ui = {
         }
     },
 
-    async preencherFormulario(pensamentoId){
-          const pensamento = await api.buscarPensamentoId(pensamentoId);
-          document.querySelector("#pensamento-id").value = pensamento.id;
-          document.querySelector("#pensamento-conteudo").value = pensamento.conteudo;
-          document.querySelector("pensamento-autoria").value = pensamento.autoria;  
-    },
 
     limpaFormulario() {
         document.querySelector("#pensamento-form").reset();
@@ -57,6 +60,25 @@ const ui = {
         icones.classList.add("icones");
         icones.appendChild(botaoEditar)
 
+
+        const botaoExcluir = document.createElement("button");
+        botaoExcluir.classList.add("botao-excluir");
+        botaoExcluir.onclick = async () =>{
+            try {
+                await api.excluirpensamento(pensamento.id)
+                ui.rederizarPensamentos()
+            } catch (error) {
+                alert("Erro ao excluir pensamento")
+                throw error
+            }
+        }
+
+        const imgExcluir = document.createElement("img");
+        imgExcluir.src = "/06-projeto/assets/imagens/icone-excluir.png";
+        imgExcluir.alt = "Exluir";
+
+        botaoExcluir.appendChild(imgExcluir);
+        icones.appendChild(botaoExcluir);
 
         li.appendChild(iconeAspas);
         li.appendChild(pensamentoConteudo);

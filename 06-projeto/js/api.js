@@ -27,7 +27,7 @@ const api = {
 
     async buscarPensamentoId(id){
         try {
-            const response = await fetch("http://localhost:3000/pensamentos")
+            const response = await fetch(`http://localhost:3000/pensamentos/${id}`)
             return response.json();
         } catch {
             alert("Error ao buscar pensamento");
@@ -49,6 +49,18 @@ const api = {
           throw error
         }
       },
+
+      async excluirpensamento(id){
+        try {
+          const response = await fetch(`http://localhost:3000/pensamentos/${id}`, {
+            method: "DELETE"
+          })
+        } catch {
+          alert("Erro ao excluir pensamento");
+          throw error
+          
+        }
+      }
 }
 
 export default api;
