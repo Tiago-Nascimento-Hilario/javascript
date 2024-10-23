@@ -1,5 +1,6 @@
 import express from  "express";
 import conectaDb from "./config/dbconect.js";
+import livro from "./models/Livros.js";
 
 const conexao = await conectaDb()
 
@@ -11,18 +12,14 @@ conexao.once("open", ()=>{
     console.log("Conexão com o banco de dados realizada com sucesso")
 })
 
-function buscarLivros(id){
-    return livros.findIndex(livro =>{
-        return livro.id === Number(id)
-    })
-}
 
 const app = express();
 app.use(express.json()) // Middleware 
 
 // busca lista de livros
-app.get("/livros", (req, res) => {
-    res.status(200).json(livros)
+app.get("/livros", async (req, res) => {
+    const listaLivros = await livro.find({})
+    res.status(200).json(listaLivros)
 });
 
 // Adicona livro
