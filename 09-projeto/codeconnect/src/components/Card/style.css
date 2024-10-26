@@ -1,0 +1,47 @@
+.container-card{
+    max-width: 350px;
+    /* background-color: antiquewhite; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--Cinza-escuro);
+    padding: 0.5rem;
+    border-radius: 4px;
+    
+
+}
+
+.fotoCard{
+    width: 100%;
+    
+}
+.titulo{
+    padding-left: 0.5rem;
+    color: var(--Cinza-medio);
+}
+
+
+.paragrafo{
+    color: var(--Cinza-medio);
+    font-size: 0.7rem;
+    text-align: justify;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.container-card-rodape{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin-top: 1rem;
+}
+
+.rodape-icones-imagem{
+    display: inline-flex;
+    gap: 1rem
+}
+
+.rodape-icones-imagem img{
+    width: 1rem;
+}

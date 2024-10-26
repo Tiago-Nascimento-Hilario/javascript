@@ -11,8 +11,8 @@
     --Grafite:#01080E;
     --Cinza-escuro:#171D1F;
     --Cinza:#3E3E3F;
-    --Cinza-Médio:#888888;
-    --Cinza-Claro:#BCBCBC;
+    --Cinza-medio:#888888;
+    --Cinza-claro:#BCBCBC;
     --Offwhite:#E1E1E1;
     --Branco:#FFFFFF;
     --fonte: 'Prompt', sans-serif;
@@ -21,4 +21,5 @@
 body{
     background-color: var(--Grafite);
     font-family: var(--fonte);
+    padding: 1rem;
 }
