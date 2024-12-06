@@ -1,18 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista</title>
+    <title>Blog São Paulo</title>
+    <!-- css -->
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./reset.css">
 </head>
-<body>
-    <h1>Lista</h1>
-    <input type="text" placeholder="escreva aqui" id="itemInput">
-    <button id="botao-adicionar">Adcionar</button>
-    <ul id="lista">
 
-    </ul>
-    <script src="./script.js"></script>
+<body>
+    <div class="container">
+        <div class="container-places">
+            <div class="place">
+                <h1><a href="#">O que eu mais gosto em São paulo</a></h1>
+                <h2>Passear na Avenida Paulista</h2>
+                <img src="./assets/avenida_paulista.jpeg" alt="imagem da avenida paulista">
+                <p>
+                    Um dos principais centros financeiros da cidade, a avenida Paulista
+                    também possui diversas opções de entretenimento. Endereço do Museu
+                    de Arte de São Paulo, <em>MASP</em>, do Teatro Gazeta e muitos outros,
+                    a região é de fácil acesso graças as diversas linhas de ônibus que
+                    cruzam a avenida e a linha de metrô que passa por baixo dela.
+                </p>
+                <p>
+                    Avenida Paulista sempre é assunto. O que será que estão falando arespeito no <a
+                        href='https://twitter.com/#!/search/Avenida Paulista' target='_blank'>Twitter</a>?
+                </p>
+                <div class="clear"></div>
+            </div>
+
+            <div class="place">
+                <h2>Os bares da Vila Madalena</h2>
+                <img src="./assets/bares.jpeg" alt="imagem dos bares da vila madalena">
+                <p>
+                    Depois de um dia de trabalho, nada melhor do que um bom chopp, um
+                    petisco e uma conversa em uma mesa de bar. Opções de sobra na região
+                    das ruas Aspicuelta, Fradique Coutinho e Wisard.
+                </p>
+                <p>
+                    Veja quais os melhores bares e restaurantes da região
+                    <a href='http://vejasp.abril.com.br/busca?chn=bares&qu=&nbh=Pinheiros%20/%20Vila%20Madalena'
+                        target='_blank'>
+                        Guia da VEJA São Paulo.
+                    </a>
+                </p>
+                <div class="clear"></div>
+            </div>
+
+            <div class="place">
+                <h2>O Parque do Ibirapuera</h2>
+                <img src="./assets/parque_do_ibirapuera.jpeg" alt="imagem do parque ibirapuera">
+                <p>
+                    Um dos cartões postais da cidade, o parque dispõe de mais de 1,5 km{^2}
+                    de área verde, lagos artificiais e pistas de cooper e ciclismo. E se
+                    isso não fosse o suficiente, o parque costuma ser palco de diversos
+                    eventos culturais ao longo do ano.
+                </p>
+                <p>
+                    Veja no <a href='http://goo.gl/maps/HoH8' target='_blank'>mapa</a> como chegar ao parque.
+                </p>
+                <div class="clear"></div>
+            </div>
+        </div>
+
+        <div class='sidenote'>
+            <h3>E existem muitos outros lugares interessantes na cidade...</h3>
+            <ol>
+                <li>O Mercado Municipal.</li>
+                <li>A Sala São Paulo.</li>
+                <li>Os estádios dos principais times de futebol da cidade.</li>
+                <li>Diversos museus, como o Memorial da América Latina, Museu da
+                    Língua Portuguesa e o Museu do Ipiranga.
+                </li>
+                <li>E mais!</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="footer clear">
+        <p>Edição 04 de Dezembro de 2024</p>
+    </div>
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+        integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous">
+        </script>
 </body>
+
 </html>
