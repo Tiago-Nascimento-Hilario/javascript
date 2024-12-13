@@ -1,0 +1,9 @@
+.container-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+    height: 5.188rem;
+    color: #FFF;
+    background-color: #041833;
+}

@@ -1,0 +1,35 @@
+nav{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    gap: 1rem;
+    background-color: #FFF;
+    @media(max-width: 768px){
+        nav{
+            width: 768px;
+        }
+    }
+     
+}
+
+nav li{
+    list-style: none;
+    border-bottom: solid 1px #041833;   
+    
+}
+
+nav li a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #041833;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+nav li a:hover{
+    color: #dfdcdc;
+    transition: 1s;
+}
+nav li:hover{
+    border-bottom: solid 1px #FFF;
+    transition: 1s;
+}
+
